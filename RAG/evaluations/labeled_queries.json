@@ -1,0 +1,252 @@
+[
+  {
+    "id": 1,
+    "query": "What architecture is proposed in the paper?",
+    "expected_answer": "The paper proposes the Transformer architecture based entirely on attention mechanisms."
+  },
+  {
+    "id": 2,
+    "query": "Why does the Transformer remove recurrence?",
+    "expected_answer": "To allow greater parallelization and reduce training time while maintaining translation quality."
+  },
+  {
+    "id": 3,
+    "query": "What are the main components of the Transformer?",
+    "expected_answer": "Encoder stack, decoder stack, multi-head attention, feed-forward networks, positional encoding, embeddings."
+  },
+  {
+    "id": 4,
+    "query": "How many encoder layers are used in the base Transformer?",
+    "expected_answer": "6 encoder layers."
+  },
+  {
+    "id": 5,
+    "query": "How many decoder layers are used in the base Transformer?",
+    "expected_answer": "6 decoder layers."
+  },
+  {
+    "id": 6,
+    "query": "What is self-attention?",
+    "expected_answer": "An attention mechanism relating different positions of a single sequence."
+  },
+  {
+    "id": 7,
+    "query": "What is scaled dot-product attention?",
+    "expected_answer": "Attention computed using Q, K, V where dot products are scaled by the square root of dk before softmax."
+  },
+  {
+    "id": 8,
+    "query": "Why are attention scores divided by the square root of dk?",
+    "expected_answer": "To prevent large dot products that push softmax into regions with very small gradients."
+  },
+  {
+    "id": 9,
+    "query": "What is multi-head attention?",
+    "expected_answer": "Multiple attention mechanisms running in parallel using different learned projections."
+  },
+  {
+    "id": 10,
+    "query": "How many attention heads are used in the base Transformer?",
+    "expected_answer": "8 attention heads."
+  },
+  {
+    "id": 11,
+    "query": "What value of dmodel is used in the base model?",
+    "expected_answer": "512."
+  },
+  {
+    "id": 12,
+    "query": "What is the dimension of each attention head?",
+    "expected_answer": "64."
+  },
+  {
+    "id": 13,
+    "query": "What is the feed-forward network dimension in the base Transformer?",
+    "expected_answer": "2048."
+  },
+  {
+    "id": 14,
+    "query": "What activation function is used inside the feed-forward network?",
+    "expected_answer": "ReLU."
+  },
+  {
+    "id": 15,
+    "query": "Why are positional encodings necessary?",
+    "expected_answer": "Because the Transformer contains no recurrence or convolution and needs positional information."
+  },
+  {
+    "id": 16,
+    "query": "Which positional encoding does the paper finally use?",
+    "expected_answer": "Sinusoidal positional encoding."
+  },
+  {
+    "id": 17,
+    "query": "What mathematical functions are used for positional encoding?",
+    "expected_answer": "Sine and cosine functions."
+  },
+  {
+    "id": 18,
+    "query": "How does the decoder prevent attending to future positions?",
+    "expected_answer": "Using masking in the self-attention mechanism."
+  },
+  {
+    "id": 19,
+    "query": "What optimizer is used for training?",
+    "expected_answer": "Adam optimizer."
+  },
+  {
+    "id": 20,
+    "query": "What values are used for β1 and β2 in Adam?",
+    "expected_answer": "β1 = 0.9 and β2 = 0.98."
+  },
+  {
+    "id": 21,
+    "query": "How many warmup steps are used during learning rate scheduling?",
+    "expected_answer": "4000 warmup steps."
+  },
+  {
+    "id": 22,
+    "query": "Which datasets are used for English-German translation?",
+    "expected_answer": "WMT 2014 English-German dataset."
+  },
+  {
+    "id": 23,
+    "query": "Approximately how many sentence pairs are in the English-German dataset?",
+    "expected_answer": "About 4.5 million sentence pairs."
+  },
+  {
+    "id": 24,
+    "query": "How many sentence pairs are used for English-French translation?",
+    "expected_answer": "36 million sentence pairs."
+  },
+  {
+    "id": 25,
+    "query": "Which tokenization method is used for English-German?",
+    "expected_answer": "Byte Pair Encoding."
+  },
+  {
+    "id": 26,
+    "query": "How large is the English-German vocabulary?",
+    "expected_answer": "About 37,000 tokens."
+  },
+  {
+    "id": 27,
+    "query": "How large is the English-French vocabulary?",
+    "expected_answer": "32,000 word-piece vocabulary."
+  },
+  {
+    "id": 28,
+    "query": "How many GPUs were used to train the Transformer?",
+    "expected_answer": "8 NVIDIA P100 GPUs."
+  },
+  {
+    "id": 29,
+    "query": "How long was the base model trained?",
+    "expected_answer": "100,000 steps or about 12 hours."
+  },
+  {
+    "id": 30,
+    "query": "How long was the big model trained?",
+    "expected_answer": "300,000 steps or about 3.5 days."
+  },
+  {
+    "id": 31,
+    "query": "What dropout rate is used in the base Transformer?",
+    "expected_answer": "0.1."
+  },
+  {
+    "id": 32,
+    "query": "What label smoothing value is used?",
+    "expected_answer": "0.1."
+  },
+  {
+    "id": 33,
+    "query": "What BLEU score does the Transformer achieve on English-German?",
+    "expected_answer": "28.4 BLEU."
+  },
+  {
+    "id": 34,
+    "query": "What BLEU score does the Transformer achieve on English-French?",
+    "expected_answer": "41.8 BLEU."
+  },
+  {
+    "id": 35,
+    "query": "What beam size is used during inference?",
+    "expected_answer": "Beam size of 4."
+  },
+  {
+    "id": 36,
+    "query": "What length penalty is used during beam search?",
+    "expected_answer": "0.6."
+  },
+  {
+    "id": 37,
+    "query": "What are the three applications of multi-head attention in the Transformer?",
+    "expected_answer": "Encoder self-attention, decoder self-attention, and encoder-decoder attention."
+  },
+  {
+    "id": 38,
+    "query": "How does self-attention compare to recurrent networks in sequential operations?",
+    "expected_answer": "Self-attention requires O(1) sequential operations while recurrent networks require O(n)."
+  },
+  {
+    "id": 39,
+    "query": "Why is self-attention considered computationally efficient?",
+    "expected_answer": "It enables parallel computation and shorter dependency paths."
+  },
+  {
+    "id": 40,
+    "query": "Which parser performance does the Transformer achieve in semi-supervised constituency parsing?",
+    "expected_answer": "92.7 F1."
+  },
+  {
+    "id": 41,
+    "query": "What parser performance does the Transformer achieve using only WSJ data?",
+    "expected_answer": "91.3 F1."
+  },
+  {
+    "id": 42,
+    "query": "Which figure illustrates the overall Transformer architecture?",
+    "expected_answer": "Figure 1."
+  },
+  {
+    "id": 43,
+    "query": "Which figure illustrates scaled dot-product attention and multi-head attention?",
+    "expected_answer": "Figure 2."
+  },
+  {
+    "id": 44,
+    "query": "According to Table 1, what is the computational complexity of self-attention?",
+    "expected_answer": "O(n²·d)."
+  },
+  {
+    "id": 45,
+    "query": "According to Table 1, what is the maximum path length of self-attention?",
+    "expected_answer": "O(1)."
+  },
+  {
+    "id": 46,
+    "query": "Which paper introduced the Transformer architecture?",
+    "expected_answer": "Attention Is All You Need."
+  },
+  {
+    "id": 47,
+    "query": "What problem does the Transformer primarily address?",
+    "expected_answer": "Sequence transduction tasks such as machine translation."
+  },
+  {
+    "id": 48,
+    "query": "What future work do the authors mention?",
+    "expected_answer": "Applying attention to images, audio, video, local attention, and less sequential generation."
+  },
+  {
+    "id": 49,
+    "query": "What is the main conclusion of the paper?",
+    "expected_answer": "Attention alone can outperform recurrent and convolutional sequence models."
+  },
+  {
+    "id": 50,
+    "query": "Why is the Transformer considered a milestone in deep learning?",
+    "expected_answer": "It introduced an attention-only architecture that achieved state-of-the-art performance with faster training and greater parallelization."
+  }
+]

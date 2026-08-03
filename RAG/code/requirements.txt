@@ -1,0 +1,2 @@
+# Required: Python 3.10+ (standard library only).
+# Optional multimodal extractors: pillow pytesseract faster-whisper

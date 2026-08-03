@@ -1,0 +1,79 @@
+NVIDIA CORPORATION
+==================
+
+NVIDIA Corporation (en-VID-ee-ə) is an American multinational technology company headquartered in Santa Clara, California. The company develops graphics processing units (GPUs), systems on chips (SoCs), and application programming interfaces (APIs) for data science, high-performance computing, artificial intelligence (AI), and mobile and automotive applications. Founded in 1993 by Jensen Huang, Chris Malachowsky, and Curtis Priem, Nvidia has been widely described as a Big Tech company.
+
+COMPANY INFORMATION:
+- Founded: April 5, 1993
+- Founders: Jensen Huang, Chris Malachowsky, Curtis Priem
+- Headquarters: Santa Clara, California, US
+- CEO: Jensen Huang
+- Number of Employees: 42,000 (2026)
+- Revenue: US$215.9 billion (FY26)
+- Net Income: US$120.1 billion (FY26)
+- Traded as: NASDAQ: NVDA
+
+HISTORY AND FOUNDING:
+In late 1992, three engineers agreed to start the company in a meeting at a Denny's roadside diner on Berryessa Road in East San Jose. Jensen Huang was previously the director of CoreWare at LSI Logic and a microprocessor designer at AMD. Chris Malachowsky was an engineer at Sun Microsystems. Curtis Priem was a senior staff engineer and graphics chip designer at IBM and Sun Microsystems.
+
+With $40,000 in the bank (equivalent to $89,000 in 2025), the company was born. The company subsequently received $20 million of venture capital funding from Sequoia Capital, Sutter Hill Ventures, and others.
+
+MAJOR MILESTONES:
+- 1996: Nvidia released the RIVA 128, its first successful graphics processor
+- 1997: The RIVA 128 was released in August
+- 1998: Release of the RIVA TNT helped solidify Nvidia's reputation
+- January 22, 1999: Nvidia went public
+- 1999: Released the GeForce 256 (NV10), its first product expressly marketed as a GPU
+- 2001: Standard & Poor's selected Nvidia to replace Enron in the S&P 500
+- 2000s: Invested over $1 billion to develop CUDA
+- March 1, 2024: Nvidia became the third company to close with market cap exceeding $2 trillion
+- June 18, 2024: Nvidia became the world's most valuable company, surpassing Microsoft and Apple
+- October 29, 2025: Nvidia became the first company to reach $5 trillion market capitalization
+
+MARKET DOMINANCE:
+- As of Q1 2025, Nvidia held 92% share of discrete desktop and laptop GPU market
+- As of 2025, Nvidia controlled 80%+ of the market for GPUs used in training AI models
+- Provides chips for 75%+ of the world's TOP500 supercomputers
+- As of 2026, Nvidia had not only the highest market cap but controlled more than half of the global AI accelerator market
+
+KEY PRODUCTS AND SERVICES:
+- GeForce (consumer-oriented graphics processing)
+- RTX (professional visual computing)
+- Tesla (dedicated GPUs for high-end applications)
+- Tegra (system on a chip for mobile)
+- CUDA (software platform and API)
+- DGX (enterprise platform for deep learning)
+- Drive (hardware and software for autonomous vehicles)
+- BlueField (data processing units)
+- Grace (datacenter CPU)
+- Omniverse (platform for metaverse applications)
+
+MAJOR ACQUISITIONS:
+- 2000: Acquired 3dfx Interactive's intellectual assets
+- 2007-2008: Multiple acquisitions including Ageia (PhysX)
+- 2019: Acquired Mellanox Technologies for $6.9 billion
+- 2020: Attempted to acquire Arm from SoftBank for $40 billion (deal fell through)
+- 2025: Multiple acquisitions including Groq, SchedMD, and others
+
+RECENT ACHIEVEMENTS:
+- Dominance in AI and machine learning acceleration
+- Launch of advanced GPU architectures (Hopper, Blackwell, Vera Rubin)
+- Major partnerships with tech giants (OpenAI, Google, etc.)
+- Expansion into autonomous vehicles and robotics
+- Development of Starlink integration capabilities
+- Growth in data center and cloud computing markets
+
+CHALLENGES AND CONTROVERSIES:
+- Proprietary driver practices criticized by Linux community
+- 2015: GTX 970 false advertising lawsuit
+- 2022: SEC settlement for $5.5 million over crypto mining non-disclosure
+- 2023: French Competition Authority raided offices
+- 2025: H20 chip production halted due to Chinese government directives
+- Antitrust investigations by FTC and DOJ
+- Data scraping controversies for AI training
+
+FINANCIAL PERFORMANCE:
+Nvidia's stock performance has been extraordinary, with the company becoming the first to reach $4 trillion and then $5 trillion in market capitalization. The company has consistently beaten analyst expectations and driven massive revenue growth in the AI era. In January 2025, Nvidia experienced the largest one-day loss in market cap for a U.S. company ($600 billion) due to DeepSeek developments.
+
+VISION AND FUTURE:
+Jensen Huang projects that AI-driven infrastructure will drive Nvidia's data center revenue to $1 trillion by 2028. The company continues to push boundaries in GPU technology, AI acceleration, autonomous vehicles, and robotics, positioning itself as the essential infrastructure provider for the AI revolution.
