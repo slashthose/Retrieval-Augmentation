@@ -1,0 +1,140 @@
+SPACEX
+======
+
+Space Exploration Technologies Corporation, doing business as SpaceX, is a private American spaceflight, telecommunications, and artificial intelligence company headquartered at the Starbase development site in Starbase, Texas. Since its founding in 2002, the company has made numerous advances in rocket propulsion, reusable launch vehicles, human spaceflight and satellite constellation technology. As of 2026, SpaceX conducts more orbital launches annually than any other launch provider, including private competitors and national programs.
+
+COMPANY INFORMATION:
+- Founded: March 14, 2002
+- Founder: Elon Musk
+- Headquarters: Starbase, Texas, U.S.
+- CEO: Elon Musk
+- President & COO: Gwynne Shotwell
+- Number of Employees: 13,000+ (2023)
+- Revenue: US$18.7 billion (2025)
+- Private Company (expected IPO in 2026)
+- Valuation: $800 billion (2025 estimate)
+
+VISION AND MISSION:
+Elon Musk founded SpaceX with a vision of decreasing the costs of space launches, paving the way for a self-sustaining colony on Mars. A major goal is to decrease the cost and improve the reliability of access to space, ultimately by a factor of ten.
+
+HISTORY AND EARLY CHALLENGES:
+In early 2001, Elon Musk met Robert Zubrin and donated $100,000 to the Mars Society. He proposed Mars Oasis - a project to land a greenhouse and grow plants on Mars. After unsuccessful attempts to acquire Russian Dnepr rockets, Musk decided to start a company to build affordable rockets.
+
+By applying vertical integration, using inexpensive commercial off-the-shelf components, and adopting the modular approach of modern software engineering, Musk believed SpaceX could significantly cut launch costs.
+
+In early 2002, Musk started looking for staff. Five people were approached for initial positions, though most declined. SpaceX was first headquartered in a warehouse in El Segundo, California.
+
+MAJOR MILESTONES:
+- March 2006: First Falcon 1 launch (failed)
+- 2008: Fourth Falcon 1 launch successful on September 28 (company nearly bankrupt before this)
+- December 2010: Dragon spacecraft successfully delivered cargo to ISS
+- May 22, 2012: Dragon became first commercial spacecraft to deliver cargo to ISS
+- December 21, 2015: First successful landing and recovery of Falcon 9 first stage
+- April 2016: First successful landing on autonomous drone ship
+- March 2017: First re-launch of orbital rocket (SES-10)
+- February 6, 2018: Successful maiden flight of Falcon Heavy
+- 2019: First operational Starlink satellite came online
+- 2020: Dragon 2 began crewed missions for NASA
+- June 2026: Expected IPO (announced)
+
+ROCKET SYSTEMS:
+- Falcon 1: Expendable two-stage-to-orbit vehicle (retired 2009)
+- Falcon 9: Heavy-lift reusable launch vehicle (first flight 2010, 630+ launches by May 2026)
+- Falcon Heavy: Heavy-lift vehicle from three Falcon 9 boosters (first flight 2018)
+- Starship: Largest launch vehicle in history (in development, fully reusable)
+
+SPACECRAFT:
+- Dragon 1: Cargo resupply vehicle for ISS (2010-2020)
+- Dragon 2: Crew and cargo vehicle for ISS and private missions (2020-present)
+
+SATELLITE CONSTELLATIONS:
+- Starlink: Internet satellite constellation (first operational satellite 2019)
+- Starshield: Military counterpart to Starlink (development announced 2023)
+
+KEY CONTRACTS AND ACHIEVEMENTS:
+- 2006: NASA awarded $396 million COTS contract
+- 2008: NASA awarded $1.6 billion Commercial Resupply Services contract
+- 2011: NASA awarded $75 million Commercial Crew Development contract
+- 2014: Won 9 out of 20 openly competed commercial launch contracts
+- 2014: NASA awarded CCtCap contract for crew transportation
+- 2020: Began operating crewed missions (Demo-2 with NASA astronauts)
+
+STARLINK:
+- 2015: Announced plan for 4,000-satellite global broadband constellation
+- 2019: First operational satellite deployed
+- Current deployment: 7,000+ satellites in orbit
+- Goal: Nearly complete global broadband coverage
+- Revenue: Primary income source for SpaceX
+
+FINANCIAL MILESTONES:
+- 2012: Private equity valuation reached $2.4 billion after Dragon C2+ success
+- 2015: Fidelity Investments invested $1 billion for 8.33% stake
+- 2017: Raised $350 million, valuation reached $21 billion
+- 2025: Internal share offers valued SpaceX at $800 billion
+- Estimated 2024 revenue: over $10 billion
+
+MAJOR TECHNICAL ACHIEVEMENTS:
+- First private company to reach orbit (2008)
+- First private company to dock with ISS (2012)
+- First successful orbital rocket booster landing and recovery (2015)
+- First private company for human spaceflight (2020)
+- Falcon 9 block 5 achieved rapid reusability
+- 630+ Falcon 9 landings and reflies (as of May 2026)
+- Launch frequency: 1-3 launches per week (2026)
+
+FACILITIES:
+- Hawthorne, California: Headquarters, manufacturing
+- Cape Canaveral Space Force Station, Florida: Launch site
+- Kennedy Space Center, Florida: Launch site
+- Vandenberg Space Force Base, California: Launch site
+- Starbase, Texas: Development, testing, manufacturing, launch site
+- McGregor, Texas: Engine testing facility (4,000 acres)
+
+LEADERSHIP AND KEY PERSONNEL:
+- Elon Musk: Founder, CEO, Chairman, Chief Technical Officer
+- Gwynne Shotwell: President and Chief Operating Officer
+- Tom Mueller: Chief Technology Officer, Propulsion
+- Early employees from aerospace: Many came from TRW and Boeing
+
+STARSHIP DEVELOPMENT:
+- 2020: Began building test prototypes
+- Goal: Fully reusable, cost-effective, adaptable launch vehicle
+- Largest launch vehicle in history
+- Aims to enable lunar missions and Mars colonization
+- Multiple high-altitude test flights conducted
+
+ARTEMIS PROGRAM INVOLVEMENT:
+- Developing human lander variant of Starship for NASA's Artemis lunar missions
+- Part of efforts to return humans to the Moon
+
+POLARIS PROGRAM:
+- Developing advanced space suits
+- Private crewed missions in development
+- Technology advancement program
+
+CHALLENGES AND CONTROVERSIES:
+- Early failures of Falcon 1 nearly bankrupted company
+- Falcon 9 explosion in 2016 (CRS-7)
+- Falcon 9 explosion during pre-launch in September 2016 (AMOS-6)
+- Employee concerns over work culture and hours
+- Criticism for Elon Musk's social media behavior
+- Geopolitical restrictions on technology exports
+
+COMMERCIAL SUCCESS:
+- Dominant commercial launch provider
+- 45% global market share for commercial contracts in 2017
+- Significant cost reduction compared to competitors
+- ULA monopoly broken through competition
+- Consistent growth in both cargo and crewed missions
+
+FUTURE PLANS:
+- Starship development and commercialization
+- Increased Starlink deployment
+- Lunar missions via NASA Artemis
+- Mars colony establishment
+- Continued reusable rocket development
+- IPO expected in 2026
+- Expansion of Starbase, Texas as primary facility
+
+CURRENT STATUS (2026):
+SpaceX has become the world's most valuable private company with an estimated valuation of $800 billion. It conducts more orbital launches than any other provider and is positioned as critical infrastructure for American space capabilities, national security, and the commercial space industry.
