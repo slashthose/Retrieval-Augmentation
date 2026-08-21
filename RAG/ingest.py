@@ -1,5 +1,6 @@
 import json
 import os
+import time
 from typing import List
 from typing import cast, Any
 
@@ -11,7 +12,7 @@ from fastapi.staticfiles import StaticFiles
 from unstructured.partition.pdf import partition_pdf
 from unstructured.chunking.title import chunk_by_title
 
-
+from image_ingest import ingest_image_records, get_image_store
 from langchain_core.documents import Document
 from langchain_ollama import ChatOllama
 from langchain_huggingface import HuggingFaceEmbeddings
@@ -75,24 +76,33 @@ def save_image_asset(
 
 
 
-def partition_document(file_path: str):
-    """Extract elements from PDF using unstructured"""
-    print(f"Partitioning document: {file_path}")
+def partition_document(file_path: str, strategy: str = "hi_res"):
+    """Extract elements from PDF using unstructured.
+
+    strategy="hi_res" runs a full layout-detection model per page — on CPU
+    this is commonly minutes per page with NO progress output until it's
+    done. Pass strategy="fast" while iterating on the pipeline; switch back
+    to "hi_res" for real ingestion once the rest of the flow is confirmed
+    working.
+    """
+    print(f"Partitioning document ({strategy}): {file_path}")
+    start = time.time()
 
     elements = partition_pdf(
         filename=file_path,  # Path to your PDF file
-        strategy="hi_res", # Use the most accurate (but slower) processing method of extraction
+        strategy=strategy,
         infer_table_structure=True, # Keep tables as structured HTML, not jumbled text
         extract_image_block_types=["Image","Table"], # Grab images found in the PDF
         extract_image_block_to_payload=True # Store images as base64 data you can actually use
     )
 
-    print(f" Extracted {len(elements)} elements")
+    print(f" Extracted {len(elements)} elements in {time.time() - start:.1f}s")
     return elements
 
 def create_chunks_by_title(elements):
     """Create intelligent chunks using title-based strategy"""
     print("Creating smart chunks...")
+    start = time.time()
 
     chunks = chunk_by_title(
         elements, # The parsed PDF elements from previous step
@@ -101,7 +111,7 @@ def create_chunks_by_title(elements):
         combine_text_under_n_chars=500 # Merge tiny chunks under 500 chars with neighbors
     )
 
-    print(f" Created {len(chunks)} chunks")
+    print(f" Created {len(chunks)} chunks in {time.time() - start:.1f}s")
     return chunks
 
 def separate_content_types(chunk) -> dict[str, Any]:
@@ -239,6 +249,11 @@ def summarise_chunks(
 
     for chunk_index, chunk in enumerate(chunks):
         content = separate_content_types(chunk)
+        print(
+            f" Chunk {chunk_index + 1}/{len(chunks)}: "
+            f"{len(content['tables'])} table(s), {len(content['images'])} image(s) "
+            f"-- table/image summaries call the LLM and are the slow part"
+        )
 
         pages = content["page_numbers"]
         page_start = pages[0] if pages else None
@@ -318,19 +333,23 @@ def summarise_chunks(
 
     return documents
 
-def ingest_pdf(pdf_path: str, db: Chroma) -> int:
+def ingest_pdf(pdf_path: str, db: Chroma, strategy: str | None = None) -> int:
     """Run the full ingestion pipeline on a single PDF and add the resulting
     chunks into an already-connected Chroma `db` (does not create a new
     Chroma client, avoiding file-lock conflicts with app.py's live connection).
 
+    strategy defaults to the PARTITION_STRATEGY env var if set, else "hi_res".
+    Set PARTITION_STRATEGY=fast for quick local testing — skips the slow
+    per-page layout model. Switch back to hi_res for real ingestion.
+
     Returns the number of chunks added.
     """
-
+    strategy = strategy or os.environ.get("PARTITION_STRATEGY", "hi_res")
 
     source_name = os.path.basename(pdf_path)
     document_id = document_id_for(pdf_path)
 
-    elements = partition_document(pdf_path)
+    elements = partition_document(pdf_path, strategy=strategy)
     chunks = create_chunks_by_title(elements)
 
     processed_chunks = summarise_chunks(
@@ -341,10 +360,13 @@ def ingest_pdf(pdf_path: str, db: Chroma) -> int:
 
     db.add_documents(processed_chunks)
 
+    image_store = get_image_store()
+    num_images_indexed = ingest_image_records(processed_chunks, image_store)
+    if num_images_indexed:
+        print(f"Indexed {num_images_indexed} image(s) from {source_name} into SigLIP store")
+
     print(f"Added {len(processed_chunks)} chunks from {source_name} to the vector store")
     return len(processed_chunks)
-    from image_ingest import ingest_image_records
-    ingest_image_records(image_records, chroma_client)
 
 
 if __name__ == "__main__":
@@ -372,4 +394,3 @@ if __name__ == "__main__":
 
     for filename in pdf_files:
         ingest_pdf(os.path.join(docs_dir, filename), db)
-
